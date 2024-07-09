@@ -4,7 +4,7 @@ import Link from "next/link";
 // NavBar.tsx
 export function NavBar() {
     return (
-        <div className=" mt-8 px-8 py-4 mx-4 rounded-xl bg-white/10 shadow-lg ring-1 ring-black/5 flex justify-between items-center ">
+        <div className=" px-8 py-4 mx-4 rounded-xl bg-white/10 shadow-lg ring-1 ring-black/5 flex justify-between items-center ">
             <Image src="/logo.svg" alt="logo" width="120" height="150" />
             <div className="flex justify-end gap-8">
                 <Login />
@@ -16,9 +16,11 @@ export function NavBar() {
 
 export function Button2() {
     return (
-        <button className="w-sm py-2 bg-teal-500 rounded-xl  text-center text-gray-800 text-lg font-medium font-['Poppins'] px-4 hover:bg-teal-700 hover:text-slate-300">
-            Start for free
-        </button>
+        <Link href="/todos" >
+            <button className="w-sm py-2 bg-teal-500 rounded-xl  text-center text-gray-800 text-lg font-medium font-['Poppins'] px-4 hover:bg-teal-700 hover:text-slate-300">
+                Start for free
+            </button>
+        </Link>
     )
 }
 

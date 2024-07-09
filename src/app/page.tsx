@@ -4,9 +4,11 @@ import { NavBar } from "./components/NavBar";
 
 export default function Home() {
   return (
-    <>
-    <NavBar />
-      <div className="flex justify-center items-center min-h-full mt-32">
+    <div className="bg-gradient-to-r from-gray-800 to-gray-700 w-full min-h-screen">
+      <div className="pt-8">
+        <NavBar />
+      </div>
+      <div className="flex justify-center items-center min-h-screen">
 
         <div className="text-center">
           <div className="text-zinc-100 text-7xl font-medium font-['Poppins']">Organize your work</div>
@@ -20,7 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-    </>
+    </div>
 
   );
 }
